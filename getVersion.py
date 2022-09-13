@@ -3,4 +3,8 @@ print(requests.__version__)
 
 googleHome = requests.get("http://google.com/")
 
-print(googleHome.text)
+print(googleHome)
+
+gitHubCode = requests.get("https://raw.githubusercontent.com/mmcgoey/CMPUT-404-LABS/main/getVersion.py")
+
+print(gitHubCode.text)
